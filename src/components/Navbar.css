@@ -1,0 +1,98 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem; /* Adjust padding for responsiveness */
+  background-color: #ffffff;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem; /* Responsive spacing between links */
+}
+
+.nav-link {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-decoration: none;
+  color: #505f98;
+}
+
+.logo {
+  font-family: Roboto, sans-serif;
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 38px;
+  color: #2245e3;
+}
+
+.get-started-btn {
+  padding: 0;
+  width: 160px;
+  height: 40px; /* Adjusted height for better visibility */
+ 
+  background-size: cover;
+  border: none;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+
+/* Small Devices (Smartphones, < 600px) */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem; /* Adjust padding for smaller screens */
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem; /* Stack links vertically */
+    margin-top: 1rem;
+  }
+
+  .get-started-btn {
+    width: 100%; /* Make button full width */
+    height: 50px; /* Larger height for easier tapping */
+    margin-top: 1rem;
+  }
+}
+
+/* Medium Devices (Tablets, 600px - 1024px) */
+@media (min-width: 600px) and (max-width: 1024px) {
+  .navbar {
+    padding: 0 1.5rem; /* Adjust padding for tablets */
+  }
+
+  .nav-links {
+    gap: 1.5rem; /* Adjust spacing between links */
+  }
+
+  .get-started-btn {
+    width: 180px; /* Slightly wider button for tablets */
+    height: 45px;
+  }
+}
+
+/* Large Devices (Laptops and Desktops, > 1024px) */
+@media (min-width: 1024px) {
+  .navbar {
+    padding: 0 4rem; /* Restore padding for larger screens */
+  }
+
+  .nav-links {
+    gap: 2.5rem; /* Maintain proper spacing between links */
+  }
+
+  .get-started-btn {
+    width: 200px; /* Larger button for visibility */
+    height: 50px;
+  }
+}

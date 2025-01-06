@@ -1,0 +1,129 @@
+/* Container for the login page */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #ffffff, #d8e4fb);
+  width: 100%;
+}
+
+/* Card for the login form */
+.login-card {
+  width: 90%;
+  max-width: 400px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Title styling */
+.login-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #111b47;
+  margin-bottom: 24px;
+}
+
+/* Form and input styling */
+.login-form {
+  margin-bottom: 16px;
+}
+
+.input-group {
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+.input-group label {
+  font-size: 14px;
+  color: #111b47;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+/* Login button */
+.login-button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #111b47;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background: #2942ad;
+}
+
+/* Divider for social login */
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 16px 0;
+}
+
+.divider-line {
+  flex-grow: 1;
+  height: 1px;
+  background-color: #d9d9d9;
+}
+
+.divider-text {
+  margin: 0 8px;
+  font-size: 14px;
+  color: #939ea4;
+}
+
+/* Social buttons */
+.social-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.social-buttons button {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.google-button {
+  background: #ffffff;
+  color: #4285f4;
+}
+
+.apple-button {
+  background: #ffffff;
+  color: #000000;
+}
+
+.facebook-button {
+  background: #ffffff;
+  color: #1877f2;
+}
+
+.social-buttons button:hover {
+  opacity: 0.9;
+}

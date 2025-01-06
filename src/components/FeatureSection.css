@@ -1,0 +1,132 @@
+.feature-section {
+  position: relative;
+  width: 100%;
+  min-height: 742px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.feature-section__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.background-mask-1,
+.background-mask-2 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.feature-section__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.feature-section__text {
+  flex: 0 1 540px;
+  margin-right: 30px;
+}
+
+.feature-section__main h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 48px;
+  color: #091133;
+  margin-bottom: 16px;
+}
+
+.feature-section__main p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #6f7cb2;
+  margin-bottom: 40px;
+}
+
+.feature-section__cards {
+  display: flex;
+  gap: 30px;
+}
+
+.feature-card {
+  flex: 0 1 255px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card__icon {
+  width: 36px;
+  height: 36px;
+  margin-bottom: 14px;
+}
+
+.feature-card__icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.feature-card h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #091133;
+  margin-bottom: 6px;
+}
+
+.feature-card p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #5d6970;
+}
+
+.feature-section__image {
+  flex: 0 1 540px;
+}
+
+.feature-section__image img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 1024px) {
+  .feature-section__content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-section__text {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+
+  .feature-section__cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-card {
+    text-align: center;
+  }
+
+  .feature-card__icon {
+    margin: 0 auto 14px;
+  }
+}

@@ -1,0 +1,44 @@
+.intro-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1440px;
+    min-height: 569px;
+    
+    background-size: cover;
+    padding: 40px;
+  }
+  
+  .intro-content {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+  }
+  
+  .intro-image img {
+    width: 480px;
+    height: auto;
+  }
+  
+  .intro-text {
+    max-width: 445px;
+  }
+  
+  .intro-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 48px;
+    color: #091133;
+    margin-bottom: 16px;
+  }
+  
+  .intro-description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #6f7cb2;
+  }
+  
