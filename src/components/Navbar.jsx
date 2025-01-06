@@ -7,13 +7,13 @@ const Navbar = ({ logo = "Landing", isSignedIn = false, onLogout }) => {
 
   const handleGetStarted = () => {
     if (isSignedIn) {
-      // Perform the logout action
+      
       if (onLogout) {
-        onLogout(); // Call the passed logout function
+        onLogout(); 
       }
-      navigate("/"); // Redirect to homepage or login page
+      navigate("/"); 
     } else {
-      navigate("/login"); // Navigate to login page if not signed in
+      navigate("/login");
     }
   };
 
